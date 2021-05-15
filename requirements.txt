@@ -1,0 +1,7 @@
+mecab-python3
+numpy
+gensim
+swem
+elasticsearch
+joblib
+scikit-learn

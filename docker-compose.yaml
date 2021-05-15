@@ -1,0 +1,25 @@
+version: '3.7'
+services:
+    elasticsearch:
+        image: docker.elastic.co/elasticsearch/elasticsearch:7.12.1
+        container_name: es-study
+        hostname: es-server
+        environment:
+            - discovery.type=single-node
+            - cluster.name=docker-cluster
+            - bootstrap.memory_lock=true
+            - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
+        ports:
+            - 9200:9200
+        volumes:
+            - es-data:/usr/share/elasticsearch/data
+    nlp-ml:
+        image: nlp-ml:1
+        container_name: nlp-python
+        hostname: nlp-server
+        tty: true
+        volumes: 
+            - ./work:/home
+volumes:
+    es-data:
+        driver: local

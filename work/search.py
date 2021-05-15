@@ -6,7 +6,7 @@ from elasticsearch import Elasticsearch
 from swem import MeCabTokenizer
 from swem import SWEM
 
-client = Elasticsearch()
+client = Elasticsearch("http://es-study:9200")
 SEARCH_SIZE = 10
 INDEX_NAME = "wikipedia"
 
@@ -25,6 +25,7 @@ def run_query_loop():
 
 
 def handle_query():
+    # query = input("Enter query text: ")
     query = input("Enter query text: ")
 
     embedding_start = time.time()
@@ -33,23 +34,28 @@ def handle_query():
 
     script_query = {
         "script_score": {
-            "query": {"match_all": {}},
+            "query": {
+                "match_all": {}
+            },
             "script": {
-                "source": "cosineSimilarity(params.query_vector, doc['text_vector']) + 1.0",
-                "params": {"query_vector": query_vector}
+                "source":
+                "cosineSimilarity(params.query_vector, doc['text_vector']) + 1.0",
+                "params": {
+                    "query_vector": query_vector
+                }
             }
         }
     }
 
     search_start = time.time()
-    response = client.search(
-        index=INDEX_NAME,
-        body={
-            "size": SEARCH_SIZE,
-            "query": script_query,
-            "_source": {"includes": ["title", "text"]}
-        }
-    )
+    response = client.search(index=INDEX_NAME,
+                             body={
+                                 "size": SEARCH_SIZE,
+                                 "query": script_query,
+                                 "_source": {
+                                     "includes": ["title", "text"]
+                                 }
+                             })
     search_time = time.time() - search_start
 
     print()
