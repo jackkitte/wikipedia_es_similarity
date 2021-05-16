@@ -13,6 +13,12 @@ services:
             - 9200:9200
         volumes:
             - es-data:/usr/share/elasticsearch/data
+    kibana:
+        image: docker.elastic.co/kibana/kibana:7.12.1
+        container_name: kibana-study
+        hostname: kibana-server
+        ports:
+            - 5601:5601
     nlp-ml:
         image: nlp-ml:1
         container_name: nlp-python

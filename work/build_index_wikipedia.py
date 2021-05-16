@@ -46,7 +46,7 @@ with open("index.json") as index_file:
 
 docs = []
 count = 0
-with gzip.open("jawiki-20210510-cirrussearch-content.json.gz") as f:
+with gzip.open("jawikisource-20210510-cirrussearch-content.json.gz") as f:
     for line in f:
         json_line = json.loads(line)
         if "index" not in json_line:
@@ -58,7 +58,7 @@ with gzip.open("jawiki-20210510-cirrussearch-content.json.gz") as f:
             if count % BATCH_SIZE == 0:
                 index_batch(docs)
                 docs = []
-                print(f"Indexed {count} documents. {100.0*count/1267963}%")
+                print(f"Indexed {count} documents.")
     if docs:
         index_batch(docs)
-        print("Indexed {} documents.".format(count))
+        print(f"Indexed {count} documents.")

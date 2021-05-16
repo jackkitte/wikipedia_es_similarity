@@ -35,7 +35,12 @@ def handle_query():
     script_query = {
         "script_score": {
             "query": {
-                "match_all": {}
+                # "match_all": {}
+                "wildcard": {
+                    "title": {
+                        "value": "*川"
+                    }
+                }
             },
             "script": {
                 "source":
@@ -63,9 +68,9 @@ def handle_query():
     print("embedding time: {:.2f} ms".format(embedding_time * 1000))
     print("search time: {:.2f} ms".format(search_time * 1000))
     for hit in response["hits"]["hits"]:
-        print("id: {}, score: {}".format(hit["_id"], hit["_score"]))
-        print(hit["_source"]["title"])
-        print(hit["_source"]["text"][:200])
+        print(f"id: {hit['_id']}, score: {hit['_score']}")
+        print(f"title: {hit['_source']['title']}")
+        print(f"[text]:\n{hit['_source']['text'][:200]}")
         print()
 
 
