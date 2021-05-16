@@ -1,0 +1,423 @@
+{
+  "took": 1,
+  "timed_out": false,
+  "_shards": {
+    "total": 2,
+    "successful": 2,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 20776,
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "2": {
+      "doc_count_error_upper_bound": 3594,
+      "sum_other_doc_count": 5759586,
+      "buckets": [
+        {
+          "key": "年",
+          "doc_count": 13132
+        },
+        {
+          "key": "3",
+          "doc_count": 13028
+        },
+        {
+          "key": "一",
+          "doc_count": 12336
+        },
+        {
+          "key": "日",
+          "doc_count": 12334
+        },
+        {
+          "key": "物",
+          "doc_count": 11942
+        },
+        {
+          "key": "人",
+          "doc_count": 11438
+        },
+        {
+          "key": "二",
+          "doc_count": 11256
+        },
+        {
+          "key": "1",
+          "doc_count": 11083
+        },
+        {
+          "key": "第",
+          "doc_count": 10847
+        },
+        {
+          "key": "十",
+          "doc_count": 10094
+        },
+        {
+          "key": "者",
+          "doc_count": 9983
+        },
+        {
+          "key": "三",
+          "doc_count": 9851
+        },
+        {
+          "key": "月",
+          "doc_count": 8925
+        },
+        {
+          "key": "後",
+          "doc_count": 8761
+        },
+        {
+          "key": "所",
+          "doc_count": 8650
+        },
+        {
+          "key": "中",
+          "doc_count": 8648
+        },
+        {
+          "key": "法",
+          "doc_count": 8478
+        },
+        {
+          "key": "等",
+          "doc_count": 8439
+        },
+        {
+          "key": "user",
+          "doc_count": 8325
+        },
+        {
+          "key": "前",
+          "doc_count": 8323
+        },
+        {
+          "key": "level",
+          "doc_count": 8322
+        },
+        {
+          "key": "noinclude",
+          "doc_count": 8321
+        },
+        {
+          "key": "pagequality",
+          "doc_count": 8321
+        },
+        {
+          "key": "国",
+          "doc_count": 8286
+        },
+        {
+          "key": "著作",
+          "doc_count": 8189
+        },
+        {
+          "key": "2",
+          "doc_count": 8086
+        },
+        {
+          "key": "四",
+          "doc_count": 8056
+        },
+        {
+          "key": "public",
+          "doc_count": 7907
+        },
+        {
+          "key": "状態",
+          "doc_count": 7906
+        },
+        {
+          "key": "domainfalsefalse",
+          "doc_count": 7876
+        },
+        {
+          "key": "domainpublic",
+          "doc_count": 7876
+        },
+        {
+          "key": "五",
+          "doc_count": 7753
+        },
+        {
+          "key": "ドメイン",
+          "doc_count": 7597
+        },
+        {
+          "key": "日本",
+          "doc_count": 7597
+        },
+        {
+          "key": "パブリック",
+          "doc_count": 7581
+        },
+        {
+          "key": "見る",
+          "doc_count": 7346
+        },
+        {
+          "key": "ふる",
+          "doc_count": 7201
+        },
+        {
+          "key": "同",
+          "doc_count": 7201
+        },
+        {
+          "key": "次",
+          "doc_count": 7106
+        },
+        {
+          "key": "六",
+          "doc_count": 7100
+        },
+        {
+          "key": "上",
+          "doc_count": 7047
+        },
+        {
+          "key": "含む",
+          "doc_count": 7002
+        },
+        {
+          "key": "ひる",
+          "doc_count": 6910
+        },
+        {
+          "key": "権",
+          "doc_count": 6782
+        },
+        {
+          "key": "七",
+          "doc_count": 6725
+        },
+        {
+          "key": "時",
+          "doc_count": 6606
+        },
+        {
+          "key": "外",
+          "doc_count": 6579
+        },
+        {
+          "key": "1596",
+          "doc_count": 6460
+        },
+        {
+          "key": "ces",
+          "doc_count": 6458
+        },
+        {
+          "key": "6",
+          "doc_count": 6448
+        },
+        {
+          "key": "4",
+          "doc_count": 6360
+        },
+        {
+          "key": "事",
+          "doc_count": 6292
+        },
+        {
+          "key": "八",
+          "doc_count": 6230
+        },
+        {
+          "key": "文書",
+          "doc_count": 6201
+        },
+        {
+          "key": "定める",
+          "doc_count": 6037
+        },
+        {
+          "key": "大",
+          "doc_count": 5940
+        },
+        {
+          "key": "目的",
+          "doc_count": 5939
+        },
+        {
+          "key": "くる",
+          "doc_count": 5924
+        },
+        {
+          "key": "法律",
+          "doc_count": 5910
+        },
+        {
+          "key": "旨",
+          "doc_count": 5904
+        },
+        {
+          "key": "九",
+          "doc_count": 5901
+        },
+        {
+          "key": "10",
+          "doc_count": 5843
+        },
+        {
+          "key": "条",
+          "doc_count": 5836
+        },
+        {
+          "key": "号",
+          "doc_count": 5817
+        },
+        {
+          "key": "心",
+          "doc_count": 5811
+        },
+        {
+          "key": "団体",
+          "doc_count": 5759
+        },
+        {
+          "key": "百",
+          "doc_count": 5541
+        },
+        {
+          "key": "此",
+          "doc_count": 5484
+        },
+        {
+          "key": "命令",
+          "doc_count": 5449
+        },
+        {
+          "key": "いずれ",
+          "doc_count": 5308
+        },
+        {
+          "key": "該当",
+          "doc_count": 5303
+        },
+        {
+          "key": "裁判",
+          "doc_count": 5283
+        },
+        {
+          "key": "的",
+          "doc_count": 5219
+        },
+        {
+          "key": "発行",
+          "doc_count": 5214
+        },
+        {
+          "key": "5",
+          "doc_count": 5173
+        },
+        {
+          "key": "得る",
+          "doc_count": 5163
+        },
+        {
+          "key": "以下",
+          "doc_count": 5120
+        },
+        {
+          "key": "爲",
+          "doc_count": 5040
+        },
+        {
+          "key": "場合",
+          "doc_count": 5038
+        },
+        {
+          "key": "行う",
+          "doc_count": 5027
+        },
+        {
+          "key": "其",
+          "doc_count": 4950
+        },
+        {
+          "key": "時事",
+          "doc_count": 4947
+        },
+        {
+          "key": "30",
+          "doc_count": 4919
+        },
+        {
+          "key": "間",
+          "doc_count": 4918
+        },
+        {
+          "key": "令",
+          "doc_count": 4913
+        },
+        {
+          "key": "参照",
+          "doc_count": 4911
+        },
+        {
+          "key": "u",
+          "doc_count": 4820
+        },
+        {
+          "key": "於",
+          "doc_count": 4724
+        },
+        {
+          "key": "め",
+          "doc_count": 4721
+        },
+        {
+          "key": "何",
+          "doc_count": 4688
+        },
+        {
+          "key": "13",
+          "doc_count": 4670
+        },
+        {
+          "key": "今",
+          "doc_count": 4640
+        },
+        {
+          "key": "行",
+          "doc_count": 4621
+        },
+        {
+          "key": "御",
+          "doc_count": 4591
+        },
+        {
+          "key": "項",
+          "doc_count": 4591
+        },
+        {
+          "key": "名",
+          "doc_count": 4583
+        },
+        {
+          "key": "表示",
+          "doc_count": 4450
+        },
+        {
+          "key": "法令",
+          "doc_count": 4447
+        },
+        {
+          "key": "版",
+          "doc_count": 4440
+        },
+        {
+          "key": "昭和",
+          "doc_count": 4400
+        }
+      ]
+    }
+  }
+}

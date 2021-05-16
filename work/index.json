@@ -10,10 +10,14 @@
     },
     "properties": {
       "title": {
-        "type": "text"
+        "type": "text",
+        "analyzer": "kuromoji",
+        "fielddata": true
       },
       "text": {
-        "type": "text"
+        "type": "text",
+        "analyzer": "kuromoji",
+        "fielddata": true
       },
       "text_vector": {
         "type": "dense_vector",

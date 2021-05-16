@@ -1,0 +1,35 @@
+{
+  "aggs": {
+    "2": {
+      "terms": {
+        "field": "text",
+        "order": {
+          "_count": "desc"
+        },
+        "size": 100
+      }
+    }
+  },
+  "size": 0,
+  "fields": [],
+  "script_fields": {},
+  "stored_fields": [
+    "*"
+  ],
+  "runtime_mappings": {},
+  "_source": {
+    "excludes": []
+  },
+  "query": {
+    "bool": {
+      "must": [],
+      "filter": [
+        {
+          "match_all": {}
+        }
+      ],
+      "should": [],
+      "must_not": []
+    }
+  }
+}
